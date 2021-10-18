@@ -96,7 +96,7 @@
   # rdf:type
   rr:predicateObjectMap [ 
     rr:predicate rdf:type ; 
-    rr:objectMap [ rml:reference "properties.@type" ]
+    rr:objectMap [ rml:reference "properties.@type"; rr:termType rr:IRI; ]
   ];
 
   # BlueBike station: available bicycles
