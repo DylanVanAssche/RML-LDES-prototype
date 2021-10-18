@@ -16,6 +16,7 @@
 @prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
 @prefix fno: <https://w3id.org/function/ontology#> .
 @prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <http://example.com/base/> .
 
 <#TargetDump> a rmlt:LogicalTarget;
@@ -108,5 +109,16 @@
   rr:predicateObjectMap [ 
     rr:predicate geo:longitude ; 
     rr:objectMap [ rml:reference "properties.longitude"; rr:datatype xsd:float; ]
+  ];
+
+  # Versioning
+  rr:predicateObjectMap [
+    rr:predicate dcterms:created ;
+    rr:objectMap [ rml:reference "generatedAtTime" ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate dcterms:isVersionOf ;
+    rr:objectMap [ rml:reference "properties.@id"; rr:termType rr:IRI; ]
   ];
 .
