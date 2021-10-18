@@ -138,7 +138,7 @@
   # Versioning
   rr:predicateObjectMap [
     rr:predicate dcterms:created ;
-    rr:objectMap [ rml:reference "generatedAtTime" ]
+    rr:objectMap [ rml:reference "generatedAtTime"; rr:dataType xsd:dateTime; ]
   ];
 
   rr:predicateObjectMap [
