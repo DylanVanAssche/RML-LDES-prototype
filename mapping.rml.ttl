@@ -38,7 +38,7 @@
 
   # LDES stream
   rr:subjectMap [ a rr:SubjectMap;
-    rr:constant "https://datapiloten.be/bluebike/availabilities.geojson";
+    rr:constant "https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl#eventstream";
     rr:termType rr:IRI;
     rr:class ldes:EventStream;
     rml:logicalTarget <#TargetDump>;
@@ -53,6 +53,15 @@
         rr:child "properties.@id";
         rr:parent "properties.@id";
       ];
+      rr:termType rr:IRI;
+    ];
+  ];
+
+  # TREE view
+  rr:predicateObjectMap [
+    rr:predicate tree:view;
+    rr:objectMap [ a rr:ObjectMap;
+      rr:constant "https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl";
       rr:termType rr:IRI;
     ];
   ];
