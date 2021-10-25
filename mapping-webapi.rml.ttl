@@ -22,6 +22,7 @@
 @prefix fno: <https://w3id.org/function/ontology#> .
 @prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix tree: <https://w3id.org/tree#> .
 @base <http://example.org/rules/> .
 
 <#TargetDump> a rmlt:LogicalTarget;
@@ -144,5 +145,11 @@
   rr:predicateObjectMap [
     rr:predicate dcterms:isVersionOf ;
     rr:objectMap [ rml:reference "properties.@id"; rr:termType rr:IRI; ]
+  ];
+
+  # Member
+  rr:predicateObjectMap [
+    rr:predicate tree:member ;
+    rr:objectMap [ rr:constant "https://datapiloten.be/bluebike/availabilities/"; rr:termType rr:IRI; ]
   ];
 .
