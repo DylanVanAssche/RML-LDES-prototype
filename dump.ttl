@@ -1081,8 +1081,15 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "3.814341"^^<http://www.w3.org/2001/XMLSchema#float>;
   <https://www.w3.org/2000/01/rdf-schema#label> "Zottegem " .
 
+<https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl>
+  a <https://w3id.org/ldes#LatestVersionSubset>;
+  <https://w3id.org/ldes#amount> 1;
+  <https://w3id.org/ldes#timestampPath> <http://purl.org/dc/terms/created>;
+  <https://w3id.org/ldes#versionOfPath> <http://purl.org/dc/terms/isVersionOf> .
+
 <https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl#eventstream>
   a <https://w3id.org/ldes#EventStream>;
+  <https://w3id.org/ldes#retentionPolicy> <https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl>;
   <https://w3id.org/tree#member> <http://irail.be/stations/bluebike/Aalst#2021-10-12T06:20:08.208Z>,
     <http://irail.be/stations/bluebike/Aalter#2021-10-12T06:20:44.789Z>, <http://irail.be/stations/bluebike/Aarschot#2021-10-12T06:20:12.927Z>,
     <http://irail.be/stations/bluebike/Antwerpen-Berchem#2021-10-12T06:20:11.221Z>, <http://irail.be/stations/bluebike/Antwerpen-Centraal#2021-10-12T06:20:06.338Z>,

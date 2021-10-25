@@ -54,6 +54,36 @@
   td:hasPropertyAffordance <#WoTWebResource>;
 .
 
+# LDES RetentionPolicy
+<#RetentionPolicyTriplesMap>
+  rml:logicalSource [
+    rml:source "skeleton.csv";
+    rml:referenceFormulation ql:CSV;
+  ];
+
+  rr:subjectMap[
+    rr:constant "https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl";
+    rr:termType rr:IRI;
+    rr:class ldes:LatestVersionSubset;
+    rml:logicalTarget <#TargetDump>;
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ldes:amount;
+    rr:objectMap [ rr:constant "1"; rr:datatype xsd:integer; ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ldes:timestampPath;
+    rr:object dcterms:created;
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ldes:versionOfPath;
+    rr:object dcterms:isVersionOf;
+  ];
+.
+
 <#TreeTriplesMap> a rr:TriplesMap;
   rml:logicalSource [ 
     rml:source "bluebike.jsonld";
@@ -67,6 +97,12 @@
     rr:termType rr:IRI;
     rr:class ldes:EventStream;
     rml:logicalTarget <#TargetDump>;
+  ];
+
+  # LDES retention policy
+  rr:predicateObjectMap [
+    rr:predicate ldes:retentionPolicy;
+    rr:object <https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl>;
   ];
 
   # TREE member
