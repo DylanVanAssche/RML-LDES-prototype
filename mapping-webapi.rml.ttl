@@ -134,7 +134,7 @@
 
   # BlueBike station: name
   rr:predicateObjectMap [ 
-    rr:predicate rdfs:name ; 
+    rr:predicate rdfs:label ; 
     rr:objectMap [ rml:reference "properties.name"; rr:datatype xsd:string; ]
   ];
 
