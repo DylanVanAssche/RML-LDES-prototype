@@ -47,36 +47,10 @@
   rr:predicateObjectMap [
     rr:predicate tree:member;
     rr:objectMap [ a rr:ObjectMap;
-      fnml:functionValue [
-        rr:predicateObjectMap [
-            rr:predicate fno:executes ;
-            rr:objectMap [ rr:constant grel:array_join ]
-        ];
-        rr:predicateObjectMap [
-            rr:predicate grel:p_array_a ;
-            rr:objectMap [ rml:reference "properties.@id" ]
-        ];
-        rr:predicateObjectMap [
-            rr:predicate grel:p_array_a ;
-            rr:objectMap [ 
-                fnml:functionValue [
-                    rr:predicateObjectMap [
-                        rr:predicate fno:executes ;
-                        rr:objectMap [ rr:constant grel:array_join ]
-                    ];
-            
-                    rr:predicateObjectMap [
-                        rr:predicate grel:p_array_a ;
-                        rr:objectMap [ rr:constant "#" ]
-                    ];
-
-                    rr:predicateObjectMap [
-                        rr:predicate grel:p_array_a ;
-                        rr:objectMap [ rml:reference "generatedAtTime" ]
-                    ];
-                ];
-            ];
-        ];
+      rr:parentTriplesMap <#StationsTriplesMap>;
+      rr:joinCondition [
+        rr:child "properties.@id";
+        rr:parent "properties.@id";
       ];
       rr:termType rr:IRI;
     ];
