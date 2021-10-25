@@ -29,8 +29,8 @@
   rmlt:serialization formats:Turtle;
 .
 
-# LDES RetentionPolicy
-<#RetentionPolicyTriplesMap>
+# TREE view
+<#ViewTriplesMap> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "skeleton.csv";
     rml:referenceFormulation ql:CSV;
@@ -38,6 +38,26 @@
 
   rr:subjectMap[
     rr:constant "https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl";
+    rr:termType rr:IRI;
+    rml:logicalTarget <#TargetDump>;
+  ];
+
+  # LDES retention policy
+  rr:predicateObjectMap [
+    rr:predicate ldes:retentionPolicy;
+    rr:object <https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl#retention>;
+  ];
+.
+
+# LDES RetentionPolicy
+<#RetentionPolicyTriplesMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "skeleton.csv";
+    rml:referenceFormulation ql:CSV;
+  ];
+
+  rr:subjectMap[
+    rr:constant "https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl#retention";
     rr:termType rr:IRI;
     rr:class ldes:LatestVersionSubset;
     rml:logicalTarget <#TargetDump>;
@@ -72,12 +92,6 @@
     rr:termType rr:IRI;
     rr:class ldes:EventStream;
     rml:logicalTarget <#TargetDump>;
-  ];
-
-  # LDES retention policy
-  rr:predicateObjectMap [
-    rr:predicate ldes:retentionPolicy;
-    rr:object <https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl>;
   ];
 
   # TREE member
