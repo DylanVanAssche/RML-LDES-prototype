@@ -18,6 +18,7 @@
 @prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix tree: <https://w3id.org/tree#> .
+@prefix ldes: <https://w3id.org/ldes#> .
 @base <http://example.com/base/> .
 
 <#TargetDump> a rmlt:LogicalTarget;
@@ -27,7 +28,62 @@
   rmlt:serialization formats:Turtle;
 .
 
-<#TriplesMap> a rr:TriplesMap;
+<#TreeTriplesMap> a rr:TriplesMap;
+  rml:logicalSource [ 
+    rml:source "bluebike.jsonld";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.features[*]"
+  ];
+
+  # LDES stream
+  rr:subjectMap [ a rr:SubjectMap;
+    rr:constant "https://datapiloten.be/bluebike/availabilities.geojson";
+    rr:termType rr:IRI;
+    rr:class ldes:EventStream;
+    rml:logicalTarget <#TargetDump>;
+  ];
+
+  # TREE member
+  rr:predicateObjectMap [
+    rr:predicate tree:member;
+    rr:objectMap [ a rr:ObjectMap;
+      fnml:functionValue [
+        rr:predicateObjectMap [
+            rr:predicate fno:executes ;
+            rr:objectMap [ rr:constant grel:array_join ]
+        ];
+        rr:predicateObjectMap [
+            rr:predicate grel:p_array_a ;
+            rr:objectMap [ rml:reference "properties.@id" ]
+        ];
+        rr:predicateObjectMap [
+            rr:predicate grel:p_array_a ;
+            rr:objectMap [ 
+                fnml:functionValue [
+                    rr:predicateObjectMap [
+                        rr:predicate fno:executes ;
+                        rr:objectMap [ rr:constant grel:array_join ]
+                    ];
+            
+                    rr:predicateObjectMap [
+                        rr:predicate grel:p_array_a ;
+                        rr:objectMap [ rr:constant "#" ]
+                    ];
+
+                    rr:predicateObjectMap [
+                        rr:predicate grel:p_array_a ;
+                        rr:objectMap [ rml:reference "generatedAtTime" ]
+                    ];
+                ];
+            ];
+        ];
+      ];
+      rr:termType rr:IRI;
+    ];
+  ];
+.
+
+<#StationsTriplesMap> a rr:TriplesMap;
   rml:logicalSource [ 
     rml:source "bluebike.jsonld";
     rml:referenceFormulation ql:JSONPath;
@@ -121,11 +177,5 @@
   rr:predicateObjectMap [
     rr:predicate dcterms:isVersionOf ;
     rr:objectMap [ rml:reference "properties.@id"; rr:termType rr:IRI; ]
-  ];
-
-  # Member
-  rr:predicateObjectMap [
-    rr:predicate tree:member ;
-    rr:objectMap [ rr:constant "https://datapiloten.be/bluebike/availabilities/"; rr:termType rr:IRI; ]
   ];
 .
