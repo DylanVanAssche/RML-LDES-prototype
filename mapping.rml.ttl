@@ -5,6 +5,7 @@
 #
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix ex: <http://example.com/> .
+@prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rml: <http://semweb.mmlab.be/ns/rml#> .
 @prefix rmlt: <http://semweb.mmlab.be/ns/rml-target#> .
@@ -105,6 +106,12 @@
   rr:predicateObjectMap [ 
     rr:predicate rdf:type ; 
     rr:objectMap [ rml:reference "properties.@type"; rr:termType rr:IRI ]
+  ];
+
+  # BlueBike station: name
+  rr:predicateObjectMap [ 
+    rr:predicate rdfs:name ; 
+    rr:objectMap [ rml:reference "properties.name"; rr:datatype xsd:string; ]
   ];
 
   # BlueBike station: available bicycles
