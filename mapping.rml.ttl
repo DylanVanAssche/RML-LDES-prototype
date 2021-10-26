@@ -32,12 +32,13 @@
 # TREE view
 <#ViewTriplesMap> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "skeleton.csv";
-    rml:referenceFormulation ql:CSV;
+    rml:source "ldes.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$";
   ];
 
   rr:subjectMap[
-    rr:constant "https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl";
+    rml:reference "ldes.iri";
     rr:termType rr:IRI;
     rml:logicalTarget <#TargetDump>;
   ];
@@ -45,27 +46,62 @@
   # LDES retention policy
   rr:predicateObjectMap [
     rr:predicate ldes:retentionPolicy;
-    rr:object <https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl#retention>;
+    rr:objectMap [
+       fnml:functionValue [
+           rr:predicateObjectMap [
+               rr:predicate fno:executes ;
+               rr:objectMap [ rr:constant grel:array_join ]
+           ];
+           rr:predicateObjectMap [
+               rr:predicate grel:p_array_a ;
+               rr:objectMap [ rr:constant "#retention"; ]
+           ];
+           rr:predicateObjectMap [
+               rr:predicate grel:p_array_a ;
+               rr:objectMap [ rml:reference "ldes.iri" ]
+           ];
+       ];
+       rr:termType rr:IRI;
+    ];
   ];
 .
 
 # LDES RetentionPolicy
 <#RetentionPolicyTriplesMap> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "skeleton.csv";
-    rml:referenceFormulation ql:CSV;
+    rml:source "ldes.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$";
   ];
 
   rr:subjectMap[
-    rr:constant "https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl#retention";
+    fnml:functionValue [
+       rr:predicateObjectMap [
+           rr:predicate fno:executes ;
+           rr:objectMap [ rr:constant grel:array_join ]
+       ];
+       rr:predicateObjectMap [
+           rr:predicate grel:p_array_a ;
+           rr:objectMap [ rml:reference "ldes.iri" ]
+       ];
+       rr:predicateObjectMap [
+           rr:predicate grel:p_array_a ;
+           rr:objectMap [ rr:constant "#retention"; ]
+       ];
+    ];
     rr:termType rr:IRI;
-    rr:class ldes:LatestVersionSubset;
     rml:logicalTarget <#TargetDump>;
+  ];
+
+  # rdf:type
+  rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rml:reference "ldes.retentionPolicy.type"; rr:termType rr:IRI; ];
   ];
 
   rr:predicateObjectMap [
     rr:predicate ldes:amount;
-    rr:objectMap [ rr:constant "1"; rr:datatype xsd:integer; ];
+    rr:objectMap [ rml:reference "ldes.retentionPolicy.amount"; rr:datatype xsd:integer; ];
   ];
 
   rr:predicateObjectMap [
@@ -81,14 +117,27 @@
 
 <#TreeTriplesMap> a rr:TriplesMap;
   rml:logicalSource [ 
-    rml:source "bluebike.jsonld";
+    rml:source "ldes.json";
     rml:referenceFormulation ql:JSONPath;
-    rml:iterator "$.features[*]"
+    rml:iterator "$"
   ];
 
   # LDES stream
-  rr:subjectMap [ a rr:SubjectMap;
-    rr:constant "https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl#eventstream";
+  rr:subjectMap[
+    fnml:functionValue [
+       rr:predicateObjectMap [
+           rr:predicate fno:executes ;
+           rr:objectMap [ rr:constant grel:array_join ]
+       ];
+       rr:predicateObjectMap [
+           rr:predicate grel:p_array_a ;
+           rr:objectMap [ rml:reference "ldes.iri" ]
+       ];
+       rr:predicateObjectMap [
+           rr:predicate grel:p_array_a ;
+           rr:objectMap [ rr:constant "#eventstream"; ]
+       ];
+    ];
     rr:termType rr:IRI;
     rr:class ldes:EventStream;
     rml:logicalTarget <#TargetDump>;
@@ -99,10 +148,6 @@
     rr:predicate tree:member;
     rr:objectMap [ a rr:ObjectMap;
       rr:parentTriplesMap <#StationsTriplesMap>;
-      rr:joinCondition [
-        rr:child "properties.@id";
-        rr:parent "properties.@id";
-      ];
       rr:termType rr:IRI;
     ];
   ];
@@ -111,7 +156,7 @@
   rr:predicateObjectMap [
     rr:predicate tree:view;
     rr:objectMap [ a rr:ObjectMap;
-      rr:constant "https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl";
+      rml:reference "ldes.iri";
       rr:termType rr:IRI;
     ];
   ];

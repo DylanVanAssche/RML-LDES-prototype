@@ -1,0 +1,9 @@
+{
+    "ldes": {
+        "iri": "https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl",
+        "retentionPolicy": {
+            "amount": 1,
+            "type": "https://w3id.org/ldes#LatestVersionSubset"
+        }
+    }
+}
