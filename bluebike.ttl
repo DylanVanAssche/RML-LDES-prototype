@@ -1081,11 +1081,10 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "3.814341"^^<http://www.w3.org/2001/XMLSchema#float>;
   <https://www.w3.org/2000/01/rdf-schema#label> "Zottegem " .
 
-<https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl>
-  <https://w3id.org/ldes#retentionPolicy> <https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl#retention> .
+<https://data.dylanvanassche.be/LDES/bluebike.ttl> <https://w3id.org/ldes#retentionPolicy>
+    <https://data.dylanvanassche.be/LDES/bluebike.ttl#retention> .
 
-<https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl#eventstream>
-  a <https://w3id.org/ldes#EventStream>;
+<https://data.dylanvanassche.be/LDES/bluebike.ttl#eventstream> a <https://w3id.org/ldes#EventStream>;
   <https://w3id.org/tree#member> <http://irail.be/stations/bluebike/Aalst#2021-10-12T06:20:08.208Z>,
     <http://irail.be/stations/bluebike/Aalter#2021-10-12T06:20:44.789Z>, <http://irail.be/stations/bluebike/Aarschot#2021-10-12T06:20:12.927Z>,
     <http://irail.be/stations/bluebike/Antwerpen-Berchem#2021-10-12T06:20:11.221Z>, <http://irail.be/stations/bluebike/Antwerpen-Centraal#2021-10-12T06:20:06.338Z>,
@@ -1137,10 +1136,9 @@
     <http://irail.be/stations/bluebike/Wevelgem#2021-10-12T06:21:09.366Z>, <http://irail.be/stations/bluebike/Zaventem#2021-10-12T06:20:51.139Z>,
     <http://irail.be/stations/bluebike/Zeebrugge-dorp#2021-10-12T06:21:14.998Z>, <http://irail.be/stations/bluebike/Zele#2021-10-12T06:21:08.664Z>,
     <http://irail.be/stations/bluebike/Zolder#2021-10-12T06:21:04.377Z>, <http://irail.be/stations/bluebike/Zottegem#2021-10-12T06:21:07.245Z>;
-  <https://w3id.org/tree#view> <https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl> .
+  <https://w3id.org/tree#view> <https://data.dylanvanassche.be/LDES/bluebike.ttl> .
 
-<https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl#retention>
-  a <https://w3id.org/ldes#LatestVersionSubset>;
+<https://data.dylanvanassche.be/LDES/bluebike.ttl#retention> a <https://w3id.org/ldes#LatestVersionSubset>;
   <https://w3id.org/ldes#amount> 1;
   <https://w3id.org/ldes#timestampPath> <http://purl.org/dc/terms/created>;
   <https://w3id.org/ldes#versionOfPath> <http://purl.org/dc/terms/isVersionOf> .

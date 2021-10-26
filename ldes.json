@@ -1,6 +1,6 @@
 {
     "ldes": {
-        "iri": "https://raw.githubusercontent.com/DylanVanAssche/RML-LDES-prototype/master/dump.ttl",
+        "iri": "https://data.dylanvanassche.be/LDES/bluebike.ttl",
         "retentionPolicy": {
             "amount": 1,
             "type": "https://w3id.org/ldes#LatestVersionSubset"

@@ -24,7 +24,7 @@
 
 <#TargetDump> a rmlt:LogicalTarget;
   rmlt:target [ a void:Dataset;
-    void:dataDump <file://./dump.ttl>;
+    void:dataDump <file://./bluebike.ttl>;
   ];
   rmlt:serialization formats:Turtle;
 .

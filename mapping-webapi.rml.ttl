@@ -29,7 +29,7 @@
 
 <#TargetDump> a rmlt:LogicalTarget;
   rmlt:target [ a void:Dataset;
-    void:dataDump <file://./dump-webapi.ttl>;
+    void:dataDump <file://./bluebike-webapi.ttl>;
   ];
   rmlt:serialization formats:Turtle;
 .
