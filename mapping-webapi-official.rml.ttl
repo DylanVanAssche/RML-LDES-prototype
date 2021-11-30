@@ -290,7 +290,7 @@
           rr:objectMap [ rr:constant "https://schema.org/ParkingFacilitySmartLock"; rr:termType rr:IRI ]
         ];
       ];
-      rr:datatype xsd:string;
+      rr:datatype rr:IRI;
     ];
   ];
 
