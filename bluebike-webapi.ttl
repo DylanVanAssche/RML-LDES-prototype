@@ -1,0 +1,11 @@
+
+<https://data.dylanvanassche.be/LDES/bluebike.ttl> <https://w3id.org/ldes#retentionPolicy>
+    <https://data.dylanvanassche.be/LDES/bluebike.ttl#retention> .
+
+<https://data.dylanvanassche.be/LDES/bluebike.ttl#eventstream> a <https://w3id.org/ldes#EventStream>;
+  <https://w3id.org/tree#view> <https://data.dylanvanassche.be/LDES/bluebike.ttl> .
+
+<https://data.dylanvanassche.be/LDES/bluebike.ttl#retention> a <https://w3id.org/ldes#LatestVersionSubset>;
+  <https://w3id.org/ldes#amount> 1;
+  <https://w3id.org/ldes#timestampPath> <http://purl.org/dc/terms/created>;
+  <https://w3id.org/ldes#versionOfPath> <http://purl.org/dc/terms/isVersionOf> .
