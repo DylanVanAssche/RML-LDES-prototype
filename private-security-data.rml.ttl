@@ -1,0 +1,12 @@
+# 
+# Private Security Data to access the official BlueBike data API
+# (c) Dylan Van Assche (2021)
+# IDLab - Ghent University - imec
+#
+@prefix td: <https://www.w3.org/2019/wot/td#> .
+@prefix hctl: <https://www.w3.org/2019/wot/hypermedia#> .
+@base <http://example.org/rules/> .
+
+<#TDForm>
+  hctl:hasTarget "SECRET_URL_BLUEBIKE_API";
+.

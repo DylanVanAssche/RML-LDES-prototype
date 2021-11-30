@@ -25,39 +25,43 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix tree: <https://w3id.org/tree#> .
 @prefix ldes: <https://w3id.org/ldes#> .
+@prefix idlab: <http://example.com/idlab/function/> .
 @base <http://example.org/rules/> .
 
 # Github will serve GZip compressed files if available.
 # However, you have to provide the regular file as well.
 <#TargetDump> a rmlt:LogicalTarget;
   rmlt:target [ a void:Dataset;
-    void:dataDump <file://./public/bluebike-webapi.ttl>;
+    void:dataDump <file://./public/bluebike.ttl>;
   ];
   rmlt:serialization formats:Turtle;
 .
 
 <#TargetDumpGzip> a rmlt:LogicalTarget;
   rmlt:target [ a void:Dataset;
-    void:dataDump <file://./public/bluebike-webapi.ttl.gz>;
+    void:dataDump <file://./public/bluebike.ttl.gz>;
   ];
   rmlt:serialization formats:Turtle;
   rmlt:compression comp:gzip;
 .
 
+<#TDForm> a td:Form;
+  # URL
+  # See private security file
+  # Content type
+  hctl:forContentType "application/json";
+  # Read only
+  hctl:hasOperationType td:readproperty;
+  # Set HTTP method and headers
+  htv:methodName "GET";
+  htv:headers ([
+    htv:fieldName "User-Agent";
+    htv:fieldValue "IDLab - Ghent University - imec (RMLMapper)";
+  ]);
+.
+
 <#WoTWebAPISource> a td:PropertyAffordance;
-  td:hasForm [
-    # URL and content type
-    hctl:hasTarget "https://datapiloten.be/bluebike/availabilities.geojson";
-    hctl:forContentType "application/json";
-    # Read only
-    hctl:hasOperationType td:readproperty;
-    # Set HTTP method and headers
-    htv:methodName "GET";
-    htv:headers ([
-      htv:fieldName "User-Agent";
-      htv:fieldValue "IDLab - Ghent University - imec (RMLMapper)";
-    ]);
-  ];
+  td:hasForm <#TDForm>;
 .
 
 <#WoTWebAPI> a td:Thing;
@@ -95,6 +99,10 @@
            rr:predicateObjectMap [
                rr:predicate grel:p_array_a ;
                rr:objectMap [ rr:constant "#retention"; ]
+           ];
+           rr:predicateObjectMap [
+               rr:predicate grel:p_string_sep ;
+               rr:objectMap [ rr:constant ""; ]
            ];
        ];
        rr:termType rr:IRI;
@@ -202,7 +210,7 @@
   rml:logicalSource [ a rml:LogicalSource;
     rml:source <#WoTWebAPISource>;
     rml:referenceFormulation ql:JSONPath;
-    rml:iterator "$.features.[*]";
+    rml:iterator "$.[*]";
   ];
   # Unique IRI generation: $stationId#$generatedAtTime
   rr:subjectMap [ 
@@ -213,7 +221,7 @@
         ];
         rr:predicateObjectMap [
             rr:predicate grel:p_array_a ;
-            rr:objectMap [ rml:reference "properties.@id" ]
+            rr:objectMap [ rr:template "http://irail.be/stations/bluebike/{name}" ]
         ];
         rr:predicateObjectMap [
             rr:predicate grel:p_array_a ;
@@ -231,7 +239,7 @@
 
                     rr:predicateObjectMap [
                         rr:predicate grel:p_array_a ;
-                        rr:objectMap [ rml:reference "generatedAtTime" ]
+                        rr:objectMap [ rml:reference "last_seen" ]
                     ];
                 ];
             ];
@@ -242,60 +250,91 @@
   ];
 
   # rdf:type
-  rr:predicateObjectMap [ 
-    rr:predicate rdf:type ; 
-    rr:objectMap [ rml:reference "properties.@type"; rr:termType rr:IRI; ]
+  rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [
+      fnml:functionValue [
+      	rr:predicateObjectMap [
+          rr:predicate fno:executes ;
+      	  rr:objectMap [ rr:constant grel:controls_if ]
+        ];
+        rr:predicateObjectMap [
+          rr:predicate grel:bool_b ;
+          rr:objectMap [ 
+            fnml:functionValue [
+              rr:predicateObjectMap [
+                rr:predicate fno:executes;
+                rr:objectMap [ rr:constant idlab:equal ];
+              ];
+              rr:predicateObjectMap [
+                rr:predicate grel:valueParameter;
+                rr:objectMap [ rml:reference "type" ];
+              ];
+              rr:predicateObjectMap [
+                rr:predicate grel:valueParameter2;
+                rr:objectMap [ rr:constant "1" ];
+              ];
+            ];
+            rr:datatype xsd:boolean
+          ];
+        ];
+        rr:predicateObjectMap [
+          rr:predicate grel:any_true ;
+          rr:objectMap [ rr:constant "https://schema.org/ParkingFacility"; rr:termType rr:IRI ]
+        ];
+        rr:predicateObjectMap [
+          rr:predicate grel:any_false ;
+          rr:objectMap [ rr:constant "https://schema.org/ParkingFacilitySmartLock"; rr:termType rr:IRI ]
+        ];
+      ];
+      rr:datatype xsd:string;
+    ];
   ];
 
   # BlueBike station: name
   rr:predicateObjectMap [ 
-    rr:predicate rdfs:label ; 
-    rr:objectMap [ rml:reference "properties.name"; rr:datatype xsd:string; ]
+    rr:predicate schema:name ; 
+    rr:objectMap [ rml:reference "name"; rr:datatype xsd:string; ]
   ];
 
   # BlueBike station: available bicycles
   rr:predicateObjectMap [ 
     rr:predicate ex:bikesAvailable ; 
-    rr:objectMap [ rml:reference "properties.bikes_available"; rr:datatype xsd:integer; ]
+    rr:objectMap [ rml:reference "bikes_available"; rr:datatype xsd:integer; ]
   ];
 
   # BlueBike station: maximum capacity
-  rr:predicateObjectMap [ 
-    rr:predicate ex:capacity ; 
-    rr:objectMap [ rml:reference "properties.capacity"; rr:datatype xsd:integer; ]
-  ];
+  # TODO: needs custom FnO to take the sum of bikes_available and bikes_in_use
+#  rr:predicateObjectMap [ 
+#    rr:predicate ex:capacity ; 
+#    rr:objectMap [ rml:reference ""; rr:datatype xsd:integer; ]
+#  ];
 
-  # BlueBike station: available docks
+  # BlueBike station: available docks = bikes_in_use
   rr:predicateObjectMap [ 
     rr:predicate ex:docksAvailable ; 
-    rr:objectMap [ rml:reference "properties.docks_available"; rr:datatype xsd:integer; ]
-  ];
-
-  # Nearby NMBS station
-  rr:predicateObjectMap [ 
-    rr:predicate ex:nearby ; 
-    rr:objectMap [ rml:reference "properties.nearby"; rr:termType rr:IRI; ]
+    rr:objectMap [ rml:reference "bikes_in_use"; rr:datatype xsd:integer; ]
   ];
 
   # Geo location
   rr:predicateObjectMap [ 
     rr:predicate geo:latitude ; 
-    rr:objectMap [ rml:reference "properties.latitude"; rr:datatype xsd:float; ]
+    rr:objectMap [ rml:reference "latitude"; rr:datatype xsd:float; ]
   ];
 
   rr:predicateObjectMap [ 
     rr:predicate geo:longitude ; 
-    rr:objectMap [ rml:reference "properties.longitude"; rr:datatype xsd:float; ]
+    rr:objectMap [ rml:reference "longitude"; rr:datatype xsd:float; ]
   ];
 
   # Versioning
   rr:predicateObjectMap [
     rr:predicate dcterms:created ;
-    rr:objectMap [ rml:reference "generatedAtTime"; rr:dataType xsd:dateTime; ]
+    rr:objectMap [ rml:reference "last_seen"; rr:dataType xsd:dateTime; ]
   ];
 
   rr:predicateObjectMap [
     rr:predicate dcterms:isVersionOf ;
-    rr:objectMap [ rml:reference "properties.@id"; rr:termType rr:IRI; ]
+    rr:objectMap [ rr:template "http://irail.be/stations/bluebike/{name}"; rr:termType rr:IRI; ]
   ];
 .

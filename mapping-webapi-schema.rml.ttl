@@ -6,7 +6,6 @@
 @prefix rml: <http://semweb.mmlab.be/ns/rml#> .
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix rmlt: <http://semweb.mmlab.be/ns/rml-target#> .
-@prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#> .
 @prefix comp: <http://semweb.mmlab.be/ns/rml-compression#> .
 @prefix formats: <http://www.w3.org/ns/formats/> .
 @prefix ex: <http://example.com/> .
@@ -27,21 +26,11 @@
 @prefix ldes: <https://w3id.org/ldes#> .
 @base <http://example.org/rules/> .
 
-# Github will serve GZip compressed files if available.
-# However, you have to provide the regular file as well.
 <#TargetDump> a rmlt:LogicalTarget;
   rmlt:target [ a void:Dataset;
-    void:dataDump <file://./public/bluebike-webapi.ttl>;
+    void:dataDump <file://./bluebike-webapi.ttl>;
   ];
   rmlt:serialization formats:Turtle;
-.
-
-<#TargetDumpGzip> a rmlt:LogicalTarget;
-  rmlt:target [ a void:Dataset;
-    void:dataDump <file://./public/bluebike-webapi.ttl.gz>;
-  ];
-  rmlt:serialization formats:Turtle;
-  rmlt:compression comp:gzip;
 .
 
 <#WoTWebAPISource> a td:PropertyAffordance;
@@ -55,7 +44,7 @@
     htv:methodName "GET";
     htv:headers ([
       htv:fieldName "User-Agent";
-      htv:fieldValue "IDLab - Ghent University - imec (RMLMapper)";
+      htv:fieldValue "RMLMapper";
     ]);
   ];
 .
@@ -76,7 +65,6 @@
     rml:reference "ldes.iri";
     rr:termType rr:IRI;
     rml:logicalTarget <#TargetDump>;
-    rml:logicalTarget <#TargetDumpGzip>;
   ];
 
   # LDES retention policy
@@ -249,7 +237,7 @@
 
   # BlueBike station: name
   rr:predicateObjectMap [ 
-    rr:predicate rdfs:label ; 
+    rr:predicate schema:name ; 
     rr:objectMap [ rml:reference "properties.name"; rr:datatype xsd:string; ]
   ];
 

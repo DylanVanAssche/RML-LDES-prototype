@@ -1,0 +1,36 @@
+name: BlueBike API publishing
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  repository_dispatch:
+    types: [push]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      # Checkout repo
+      - uses: actions/checkout@v2
+        
+      # Replace secret BlueBike API URL
+      - shell: bash
+        env:
+          BLUEBIKE_API_URL: ${{ secrets.BLUEBIKE_API_URL }}
+        run: |
+          sed -i "s/SECRET_URL_BLUEBIKE_API/$BLUEBIKE_API_URL/g" private-security-data.rml.ttl
+
+      # Generate RDF using RMLMapper
+      - run: mkdir public
+      - run: wget https://github.com/RMLio/rmlmapper-java/releases/download/v4.13.0/rmlmapper-4.13.0-r359-all.jar
+      - run: java -jar rmlmapper-4.13.0-r359-all.jar -m mapping-webapi-official.rml.ttl -psd private-security-data.rml.ttl
+
+      # Execute deployment only on production
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/master' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
