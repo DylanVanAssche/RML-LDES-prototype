@@ -4,7 +4,7 @@ name: BlueBike archiving
 on:
   # - on schedule, every 5 minutes
   schedule:
-    - cron: "*/5 * * * *"
+  #  - cron: "*/5 * * * *"
   # - manually
   workflow_dispatch:
 
