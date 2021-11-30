@@ -25,7 +25,7 @@ jobs:
           url: 'https://dylanvanassche.github.io/RML-LDES-prototype/bluebike.ttl'
           # output directory name
           storage: 'history'
-          fragmentation_strategy: 'base'
+          fragmentation_strategy: 'basic'
           fragmentation_page_size: 100
           property_path: '<http://purl.org/dc/terms/created>'
           stream_data: "true"
