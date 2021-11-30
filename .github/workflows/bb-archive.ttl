@@ -1,0 +1,31 @@
+
+# trigger workflow:
+
+on:
+  # - on schedule, every 5 minutes
+  schedule:
+    - cron: "*/5 * * * *"
+  # - manually
+  workflow_dispatch:
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+      # Check out the repository, so it can read the files inside it and do other operations
+      - name: Check out repo
+        uses: actions/checkout@v2
+      # Fetch the dataset, write the data to json files and push the files to the repo
+      - name: Fetch and write data
+        uses: ddvlanck/LDES-Action@main
+        with:
+          gh_pages_url: 'pieter.pm/RML-LDES-prototype'
+          datasource_strategy: 'ldes-client'
+          # url you want to fetch
+          url: 'https://dylanvanassche.github.io/RML-LDES-prototype/bluebike.ttl'
+          # output directory name
+          storage: 'history'
+          fragmentation_strategy: 'base'
+          fragmentation_page_size: 100
+          property_path: '<http://purl.org/dc/terms/created>'
+          stream_data: "true"
