@@ -28,21 +28,12 @@
 @prefix idlab: <http://example.com/idlab/function/> .
 @base <http://example.org/rules/> .
 
-# Github will serve GZip compressed files if available.
-# However, you have to provide the regular file as well.
+
 <#TargetDump> a rmlt:LogicalTarget;
   rmlt:target [ a void:Dataset;
     void:dataDump <file://./public/bluebike.ttl>;
   ];
   rmlt:serialization formats:Turtle;
-.
-
-<#TargetDumpGzip> a rmlt:LogicalTarget;
-  rmlt:target [ a void:Dataset;
-    void:dataDump <file://./public/bluebike.ttl.gz>;
-  ];
-  rmlt:serialization formats:Turtle;
-  rmlt:compression comp:gzip;
 .
 
 <#TDForm> a td:Form;
@@ -80,7 +71,6 @@
     rml:reference "ldes.iri";
     rr:termType rr:IRI;
     rml:logicalTarget <#TargetDump>;
-    rml:logicalTarget <#TargetDumpGzip>;
   ];
 
   # LDES retention policy
@@ -135,7 +125,6 @@
     ];
     rr:termType rr:IRI;
     rml:logicalTarget <#TargetDump>;
-    rml:logicalTarget <#TargetDumpGzip>;
   ];
 
   # rdf:type
@@ -186,13 +175,13 @@
     rr:termType rr:IRI;
     rr:class ldes:EventStream;
     rml:logicalTarget <#TargetDump>;
-    rml:logicalTarget <#TargetDumpGzip>;
   ];
 
   # TREE member
   rr:predicateObjectMap [
     rr:predicate tree:member;
-    rr:objectMap [ a rr:ObjectMap;
+    rr:objectMap [ 
+      a rr:ObjectMap;
       rr:parentTriplesMap <#StationsTriplesMap>;
       rr:termType rr:IRI;
     ];
@@ -223,7 +212,7 @@
         ];
         rr:predicateObjectMap [
             rr:predicate grel:p_array_a ;
-            rr:objectMap [ rr:template "http://irail.be/stations/bluebike/{name}" ]
+            rr:objectMap [ rr:template "https://blue-bike.be/stations/{id}" ]
         ];
         rr:predicateObjectMap [
             rr:predicate grel:p_array_a ;
@@ -249,7 +238,6 @@
     ];
     rr:termType rr:IRI;
     rml:logicalTarget <#TargetDump>;
-    rml:logicalTarget <#TargetDumpGzip>;
   ];
 
   # rdf:type
@@ -283,11 +271,11 @@
         ];
         rr:predicateObjectMap [
           rr:predicate grel:any_true ;
-          rr:objectMap [ rr:constant "https://schema.org/ParkingFacility"; rr:termType rr:IRI ]
+          rr:objectMap [ rr:constant "https://data.vlaanderen.be/ns/transportnetwerk#Transportobject"; rr:termType rr:IRI ]
         ];
         rr:predicateObjectMap [
           rr:predicate grel:any_false ;
-          rr:objectMap [ rr:constant "https://schema.org/ParkingFacilitySmartLock"; rr:termType rr:IRI ]
+          rr:objectMap [ rr:constant "https://data.vlaanderen.be/ns/transportnetwerk#Transportobject"; rr:termType rr:IRI ]
         ];
       ];
       rr:termType rr:IRI;
@@ -338,6 +326,6 @@
 
   rr:predicateObjectMap [
     rr:predicate dcterms:isVersionOf ;
-    rr:objectMap [ rr:template "http://irail.be/stations/bluebike/{name}"; rr:termType rr:IRI; ]
+    rr:objectMap [ rr:template "https://blue-bike.be/stations/{id}"; rr:termType rr:IRI; ]
   ];
 .
