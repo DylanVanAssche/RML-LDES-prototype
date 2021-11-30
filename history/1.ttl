@@ -1,0 +1,9 @@
+<https://dylanvanassche.github.io/RML-LDES-prototype/bluebike.ttl> <https://w3id.org/tree#member> <http://irail.be/stations/bluebike/Station%20Wezemaal#>.
+<https://dylanvanassche.github.io/RML-LDES-prototype/bluebike.ttl> <https://w3id.org/tree#member> <http://irail.be/stations/bluebike/Station%20Wondelgem#2021-11-24T16:11:45>.
+<https://dylanvanassche.github.io/RML-LDES-prototype/bluebike.ttl> <https://w3id.org/tree#member> <http://irail.be/stations/bluebike/Station%20Zaventem#2021-11-30T16:50:47>.
+<https://dylanvanassche.github.io/RML-LDES-prototype/bluebike.ttl> <https://w3id.org/tree#member> <http://irail.be/stations/bluebike/Station%20Zeebrugge-Dorp#>.
+<https://dylanvanassche.github.io/RML-LDES-prototype/bluebike.ttl> <https://w3id.org/tree#member> <http://irail.be/stations/bluebike/Station%20Zele#>.
+<https://dylanvanassche.github.io/RML-LDES-prototype/bluebike.ttl> <https://w3id.org/tree#member> <http://irail.be/stations/bluebike/Station%20Zolder#>.
+<https://dylanvanassche.github.io/RML-LDES-prototype/bluebike.ttl> <https://w3id.org/tree#member> <http://irail.be/stations/bluebike/Station%20Zottegem#>.
+<https://pieter.pm/RML-LDES-prototype/history/1.ttl> a <https://w3id.org/tree#Node>.
+<https://dylanvanassche.github.io/RML-LDES-prototype/bluebike.ttl> <http://rdfs.org/ns/void#subset> <https://pieter.pm/RML-LDES-prototype/history/1.ttl>.
