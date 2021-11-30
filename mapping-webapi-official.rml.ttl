@@ -135,6 +135,7 @@
     ];
     rr:termType rr:IRI;
     rml:logicalTarget <#TargetDump>;
+    rml:logicalTarget <#TargetDumpGzip>;
   ];
 
   # rdf:type
@@ -185,6 +186,7 @@
     rr:termType rr:IRI;
     rr:class ldes:EventStream;
     rml:logicalTarget <#TargetDump>;
+    rml:logicalTarget <#TargetDumpGzip>;
   ];
 
   # TREE member
@@ -247,6 +249,7 @@
     ];
     rr:termType rr:IRI;
     rml:logicalTarget <#TargetDump>;
+    rml:logicalTarget <#TargetDumpGzip>;
   ];
 
   # rdf:type
