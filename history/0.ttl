@@ -103,3 +103,8 @@ _:df_1_0 a <https://w3id.org/tree#Relation>;
     <https://w3id.org/tree#node> <https://pieter.pm/RML-LDES-prototype/history/1.ttl>.
 <https://pieter.pm/RML-LDES-prototype/history/0.ttl> a <https://w3id.org/tree#Node>.
 <https://dylanvanassche.github.io/RML-LDES-prototype/bluebike.ttl> <http://rdfs.org/ns/void#subset> <https://pieter.pm/RML-LDES-prototype/history/0.ttl>.
+<https://pieter.pm/RML-LDES-prototype/history/0.ttl> <https://w3id.org/tree#relation> _:df_1_0.
+_:df_1_0 a <https://w3id.org/tree#Relation>;
+    <https://w3id.org/tree#node> <https://pieter.pm/RML-LDES-prototype/history/1.ttl>.
+<https://pieter.pm/RML-LDES-prototype/history/0.ttl> a <https://w3id.org/tree#Node>.
+<https://pieter.pm/RML-LDES-prototype/bluebike.ttl> <http://rdfs.org/ns/void#subset> <https://pieter.pm/RML-LDES-prototype/history/0.ttl>.
