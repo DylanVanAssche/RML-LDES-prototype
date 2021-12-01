@@ -16,7 +16,7 @@ jobs:
           gh_pages_url: 'pieter.pm/RML-LDES-prototype'
           datasource_strategy: 'ldes-client'
           # url you want to fetch
-          url: 'https://dylanvanassche.github.io/RML-LDES-prototype/bluebike.ttl'
+          url: 'https://pieter.pm/RML-LDES-prototype/bluebike.ttl'
           # output directory name
           storage: 'history'
           fragmentation_strategy: 'basic'
