@@ -1,13 +1,7 @@
 name: BlueBike archiving
 # trigger workflow:
-
-on:
-  # - on schedule, every 5 minutes
-  schedule:
-  #  - cron: "*/5 * * * *"
-  # - manually
+on: 
   workflow_dispatch:
-
 jobs:
   scheduled:
     runs-on: ubuntu-latest
