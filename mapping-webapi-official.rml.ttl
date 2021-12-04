@@ -271,11 +271,11 @@
         ];
         rr:predicateObjectMap [
           rr:predicate grel:any_true ;
-          rr:objectMap [ rr:constant "https://data.vlaanderen.be/ns/transportnetwerk#Transportobject"; rr:termType rr:IRI ]
+          rr:objectMap [ rr:constant "https://w3id.org/gbfs#Station"; rr:termType rr:IRI ]
         ];
         rr:predicateObjectMap [
           rr:predicate grel:any_false ;
-          rr:objectMap [ rr:constant "https://data.vlaanderen.be/ns/transportnetwerk#Transportobject"; rr:termType rr:IRI ]
+          rr:objectMap [ rr:constant "https://w3id.org/gbfs#Station"; rr:termType rr:IRI ]
         ];
       ];
       rr:termType rr:IRI;
