@@ -9,7 +9,7 @@
 @prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#> .
 @prefix comp: <http://semweb.mmlab.be/ns/rml-compression#> .
 @prefix formats: <http://www.w3.org/ns/formats/> .
-@prefix ex: <http://example.com/> .
+@prefix gbfs: <https://w3id.org/gbfs#> .
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix td: <https://www.w3.org/2019/wot/td#> .
@@ -290,20 +290,13 @@
 
   # BlueBike station: available bicycles
   rr:predicateObjectMap [ 
-    rr:predicate ex:bikesAvailable ; 
+    rr:predicate gbfs:bikes_available ; 
     rr:objectMap [ rml:reference "bikes_available"; rr:datatype xsd:integer; ]
   ];
 
-  # BlueBike station: maximum capacity
-  # TODO: needs custom FnO to take the sum of bikes_available and bikes_in_use
-#  rr:predicateObjectMap [ 
-#    rr:predicate ex:capacity ; 
-#    rr:objectMap [ rml:reference ""; rr:datatype xsd:integer; ]
-#  ];
-
   # BlueBike station: available docks = bikes_in_use
   rr:predicateObjectMap [ 
-    rr:predicate ex:docksAvailable ; 
+    rr:predicate gbfs:docks_in_use ; 
     rr:objectMap [ rml:reference "bikes_in_use"; rr:datatype xsd:integer; ]
   ];
 
