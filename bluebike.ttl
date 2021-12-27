@@ -47,10 +47,10 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.625722000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "5.565750000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Gare%20de%20Mons#2021-12-27T06:46:20> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Gare%20de%20Mons#2021-12-27T06:51:20> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 6;
   <http://example.com/docksAvailable> 0;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:46:20";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:51:20";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Gare%20de%20Mons>;
   <http://schema.org/name> "Gare de Mons";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.455693000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -135,11 +135,11 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.168722000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.493528000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/P%26R%20Mol%20-%20De%20Nete#2021-12-27T06:47:18>
+<http://irail.be/stations/bluebike/P%26R%20Mol%20-%20De%20Nete#2021-12-27T06:52:18>
   a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 4;
   <http://example.com/docksAvailable> 0;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:18";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:18";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/P%26R%20Mol%20-%20De%20Nete>;
   <http://schema.org/name> "P&R Mol - De Nete";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.181190000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -153,11 +153,11 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.819656000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.944743000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Parking%20Deinze-Leiespiegel#2021-12-27T06:47:36>
+<http://irail.be/stations/bluebike/Parking%20Deinze-Leiespiegel#2021-12-27T06:52:37>
   a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 11;
   <http://example.com/docksAvailable> 1;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:36";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:37";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Parking%20Deinze-Leiespiegel>;
   <http://schema.org/name> "Parking Deinze-Leiespiegel";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.982417000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -200,29 +200,29 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.942944000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.038623000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Aalter#2021-12-27T06:47:20> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Aalter#2021-12-27T06:52:21> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 8;
   <http://example.com/docksAvailable> 0;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:20";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:21";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Aalter>;
   <http://schema.org/name> "Station Aalter";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.091889000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "3.448750000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Aarschot#2021-12-27T06:47:29> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Aarschot#2021-12-27T06:52:29> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 15;
   <http://example.com/docksAvailable> 1;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:29";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:29";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Aarschot>;
   <http://schema.org/name> "Station Aarschot";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.983778000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.823778000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Antwerpen-Berchem#2021-12-27T06:47:41>
+<http://irail.be/stations/bluebike/Station%20Antwerpen-Berchem#2021-12-27T06:52:41>
   a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 53;
   <http://example.com/docksAvailable> 1;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:41";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:41";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Antwerpen-Berchem>;
   <http://schema.org/name> "Station Antwerpen-Berchem";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.199503000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -281,10 +281,10 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.906306000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.207806000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Beveren-Waas#2021-12-27T06:46:18> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Beveren-Waas#2021-12-27T06:51:19> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 8;
   <http://example.com/docksAvailable> 0;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:46:18";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:51:19";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Beveren-Waas>;
   <http://schema.org/name> "Station Beveren-Waas";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.208483000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -306,20 +306,20 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.165508000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.746427000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Brugge#2021-12-27T06:46:12> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Brugge#2021-12-27T06:51:13> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 59;
   <http://example.com/docksAvailable> 7;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:46:12";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:51:13";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Brugge>;
   <http://schema.org/name> "Station Brugge";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.196972000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "3.218639000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Brugge%20%28Kamgebouw%29#2021-12-27T06:46:44>
+<http://irail.be/stations/bluebike/Station%20Brugge%20%28Kamgebouw%29#2021-12-27T06:51:44>
   a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 26;
   <http://example.com/docksAvailable> 1;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:46:44";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:51:44";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Brugge%20%28Kamgebouw%29>;
   <http://schema.org/name> "Station Brugge (Kamgebouw)";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.196771900000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -359,19 +359,19 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.889126000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.447706000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Diest#2021-12-27T06:47:17> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Diest#2021-12-27T06:52:18> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 13;
   <http://example.com/docksAvailable> 0;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:17";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:18";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Diest>;
   <http://schema.org/name> "Station Diest";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.992972000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "5.050833000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Drongen#2021-12-27T06:46:24> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Drongen#2021-12-27T06:51:25> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 8;
   <http://example.com/docksAvailable> 0;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:46:24";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:51:25";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Drongen>;
   <http://schema.org/name> "Station Drongen";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.047438000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -437,11 +437,11 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.967000000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "5.497111000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Gent-Dampoort#2021-12-27T06:47:18> a
+<http://irail.be/stations/bluebike/Station%20Gent-Dampoort#2021-12-27T06:52:18> a
     <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 46;
   <http://example.com/docksAvailable> 5;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:18";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:18";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Gent-Dampoort>;
   <http://schema.org/name> "Station Gent-Dampoort";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.056083000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -457,11 +457,11 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.034889000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "3.709667000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Gent-St.%20P.%20%28St.-Denijslaan%29#2021-12-27T06:46:59>
+<http://irail.be/stations/bluebike/Station%20Gent-St.%20P.%20%28St.-Denijslaan%29#2021-12-27T06:52:00>
   a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 54;
   <http://example.com/docksAvailable> 8;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:46:59";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:00";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Gent-St.%20P.%20%28St.-Denijslaan%29>;
   <http://schema.org/name> "Station Gent-St. P. (St.-Denijslaan)";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.034889000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -485,19 +485,19 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.966578000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.613315000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Halle#2021-12-27T06:47:17> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Halle#2021-12-27T06:52:17> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 19;
   <http://example.com/docksAvailable> 0;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:17";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:17";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Halle>;
   <http://schema.org/name> "Station Halle";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.733583000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.240500000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Harelbeke#2021-12-27T06:46:42> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Harelbeke#2021-12-27T06:51:43> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 10;
   <http://example.com/docksAvailable> 0;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:46:42";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:51:43";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Harelbeke>;
   <http://schema.org/name> "Station Harelbeke";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.855703000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -529,11 +529,11 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.334168000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "3.239668000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Heist-op-den-Berg#2021-12-27T06:46:18>
+<http://irail.be/stations/bluebike/Station%20Heist-op-den-Berg#2021-12-27T06:51:18>
   a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 13;
   <http://example.com/docksAvailable> 0;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:46:18";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:51:18";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Heist-op-den-Berg>;
   <http://schema.org/name> "Station Heist-op-den-Berg";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.074167000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -556,10 +556,10 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.038330000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "5.281699000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Heverlee#2021-12-27T06:47:18> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Heverlee#2021-12-27T06:52:18> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 12;
   <http://example.com/docksAvailable> 0;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:18";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:18";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Heverlee>;
   <http://schema.org/name> "Station Heverlee";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.862615000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -599,19 +599,19 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.340180000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "3.284540000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Kontich-Lint#2021-12-27T06:47:19> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Kontich-Lint#2021-12-27T06:52:19> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 6;
   <http://example.com/docksAvailable> 0;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:19";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:19";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Kontich-Lint>;
   <http://schema.org/name> "Station Kontich-Lint";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.134278000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.476111000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Kortrijk#2021-12-27T06:47:05> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Kortrijk#2021-12-27T06:53:03> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 54;
   <http://example.com/docksAvailable> 6;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:05";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:53:03";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Kortrijk>;
   <http://schema.org/name> "Station Kortrijk";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.823667000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -633,11 +633,11 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.748290000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "5.079402000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Leuven%20%28Kop%20van%20Kessel-Lo%29#2021-12-27T06:46:19>
+<http://irail.be/stations/bluebike/Station%20Leuven%20%28Kop%20van%20Kessel-Lo%29#2021-12-27T06:51:19>
   a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 25;
   <http://example.com/docksAvailable> 0;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:46:19";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:51:19";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Leuven%20%28Kop%20van%20Kessel-Lo%29>;
   <http://schema.org/name> "Station Leuven (Kop van Kessel-Lo)";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.882490000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -653,10 +653,10 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.880028000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.715667000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Lier#2021-12-27T06:46:06> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Lier#2021-12-27T06:51:06> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 19;
   <http://example.com/docksAvailable> 2;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:46:06";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:51:06";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Lier>;
   <http://schema.org/name> "Station Lier";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.135778000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -679,20 +679,20 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.211770000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "5.312579000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Mechelen#2021-12-27T06:47:21> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Mechelen#2021-12-27T06:52:22> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 61;
   <http://example.com/docksAvailable> 7;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:21";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:22";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Mechelen>;
   <http://schema.org/name> "Station Mechelen";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.017806000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.483000000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Mechelen-Nekkerspoel%20#2021-12-27T06:47:17>
+<http://irail.be/stations/bluebike/Station%20Mechelen-Nekkerspoel%20#2021-12-27T06:52:18>
   a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 10;
   <http://example.com/docksAvailable> 1;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:17";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:18";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Mechelen-Nekkerspoel%20>;
   <http://schema.org/name> "Station Mechelen-Nekkerspoel ";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.030222000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -745,10 +745,10 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.357028000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.632333000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Oostende#2021-12-27T06:46:06> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Oostende#2021-12-27T06:51:06> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 58;
   <http://example.com/docksAvailable> 5;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:46:06";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:51:06";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Oostende>;
   <http://schema.org/name> "Station Oostende";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.228306000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -771,10 +771,10 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.851333000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "3.602000000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Poperinge#2021-12-27T06:47:21> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Poperinge#2021-12-27T06:52:21> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 6;
   <http://example.com/docksAvailable> 1;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:21";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:21";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Poperinge>;
   <http://schema.org/name> "Station Poperinge";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.854554000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -806,10 +806,10 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.171444000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.143528000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Sint-Truiden#2021-12-27T06:47:24> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Sint-Truiden#2021-12-27T06:52:24> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 7;
   <http://example.com/docksAvailable> 1;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:24";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:24";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Sint-Truiden>;
   <http://schema.org/name> "Station Sint-Truiden";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.817222000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -850,10 +850,10 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.784111000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "5.473444000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Torhout#2021-12-27T06:46:38> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Torhout#2021-12-27T06:51:38> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 10;
   <http://example.com/docksAvailable> 0;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:46:38";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:51:38";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Torhout>;
   <http://schema.org/name> "Station Torhout";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.065083000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -868,19 +868,19 @@
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "51.321944000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.937611000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Vilvoorde#2021-12-27T06:47:05> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Vilvoorde#2021-12-27T06:52:06> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 44;
   <http://example.com/docksAvailable> 1;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:05";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:06";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Vilvoorde>;
   <http://schema.org/name> "Station Vilvoorde";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.924750000000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "4.433000000000"^^<http://www.w3.org/2001/XMLSchema#float> .
 
-<http://irail.be/stations/bluebike/Station%20Waregem#2021-12-27T06:47:20> a <https://schema.org/ParkingFacility>;
+<http://irail.be/stations/bluebike/Station%20Waregem#2021-12-27T06:52:21> a <https://schema.org/ParkingFacility>;
   <http://example.com/bikesAvailable> 12;
   <http://example.com/docksAvailable> 3;
-  <http://purl.org/dc/terms/created> "2021-12-27T06:47:20";
+  <http://purl.org/dc/terms/created> "2021-12-27T06:52:21";
   <http://purl.org/dc/terms/isVersionOf> <http://irail.be/stations/bluebike/Station%20Waregem>;
   <http://schema.org/name> "Station Waregem";
   <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "50.891917000000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -968,59 +968,59 @@
     <http://irail.be/stations/bluebike/Brussel%20Luxemburg%2FBruxelles%20Luxembourg#2021-12-27T06:50:18>,
     <http://irail.be/stations/bluebike/Brussel%20Noord%2FBruxelles%20Nord#2021-12-27T06:50:17>,
     <http://irail.be/stations/bluebike/Brussel-Zuid%2FBruxelles%20Midi#>, <http://irail.be/stations/bluebike/Gare%20de%20Li%C3%A8ge-Guillemins#2021-12-27T06:48:24>,
-    <http://irail.be/stations/bluebike/Gare%20de%20Mons#2021-12-27T06:46:20>, <http://irail.be/stations/bluebike/Gare%20de%20Namur#2021-12-27T06:49:20>,
+    <http://irail.be/stations/bluebike/Gare%20de%20Mons#2021-12-27T06:51:20>, <http://irail.be/stations/bluebike/Gare%20de%20Namur#2021-12-27T06:49:20>,
     <http://irail.be/stations/bluebike/Halte%20Bourget%20-%20NAVO#>, <http://irail.be/stations/bluebike/Halte%20Lier-Veemarkt#2021-12-27T06:48:17>,
     <http://irail.be/stations/bluebike/Halte%20Mechelen-Veemarkt#2021-12-27T06:50:09>,
     <http://irail.be/stations/bluebike/Herstelplaats%20Antwerpen#>, <http://irail.be/stations/bluebike/Herstelplaats%20Sentinel#>,
     <http://irail.be/stations/bluebike/Hoppinpunt%20Vilvoorde%20Kassei#>, <http://irail.be/stations/bluebike/Mobipunt%20Gavere#2021-12-27T06:50:24>,
     <http://irail.be/stations/bluebike/P%26R%20Boechout-Capenberg#2021-12-27T06:50:16>,
-    <http://irail.be/stations/bluebike/P%26R%20Mol%20-%20De%20Nete#2021-12-27T06:47:18>,
-    <http://irail.be/stations/bluebike/P%26R%20Tienen%20Sporthalstraat#>, <http://irail.be/stations/bluebike/Parking%20Deinze-Leiespiegel#2021-12-27T06:47:36>,
+    <http://irail.be/stations/bluebike/P%26R%20Mol%20-%20De%20Nete#2021-12-27T06:52:18>,
+    <http://irail.be/stations/bluebike/P%26R%20Tienen%20Sporthalstraat#>, <http://irail.be/stations/bluebike/Parking%20Deinze-Leiespiegel#2021-12-27T06:52:37>,
     <http://irail.be/stations/bluebike/Parking%20Lier-De%20Mol#2021-12-27T06:49:17>, <http://irail.be/stations/bluebike/Parking%20Waregem-Expo#2021-12-27T06:49:20>,
     <http://irail.be/stations/bluebike/Plantentuin%20Meise#2021-12-27T06:48:17>, <http://irail.be/stations/bluebike/Station%20Aalst#2021-12-27T06:50:05>,
-    <http://irail.be/stations/bluebike/Station%20Aalter#2021-12-27T06:47:20>, <http://irail.be/stations/bluebike/Station%20Aarschot#2021-12-27T06:47:29>,
-    <http://irail.be/stations/bluebike/Station%20Antwerpen-Berchem#2021-12-27T06:47:41>,
+    <http://irail.be/stations/bluebike/Station%20Aalter#2021-12-27T06:52:21>, <http://irail.be/stations/bluebike/Station%20Aarschot#2021-12-27T06:52:29>,
+    <http://irail.be/stations/bluebike/Station%20Antwerpen-Berchem#2021-12-27T06:52:41>,
     <http://irail.be/stations/bluebike/Station%20Antwerpen-Centraal#2021-12-27T06:50:48>,
     <http://irail.be/stations/bluebike/Station%20Antwerpen-Centraal%20E-lock#>, <http://irail.be/stations/bluebike/Station%20Antwerpen-Luchtbal#>,
     <http://irail.be/stations/bluebike/Station%20Antwerpen-Noorderdokken#>, <http://irail.be/stations/bluebike/Station%20Antwerpen-Zuid#2021-12-27T06:49:10>,
-    <http://irail.be/stations/bluebike/Station%20Asse#2021-12-27T06:48:15>, <http://irail.be/stations/bluebike/Station%20Beveren-Waas#2021-12-27T06:46:18>,
+    <http://irail.be/stations/bluebike/Station%20Asse#2021-12-27T06:48:15>, <http://irail.be/stations/bluebike/Station%20Beveren-Waas#2021-12-27T06:51:19>,
     <http://irail.be/stations/bluebike/Station%20Blankenberge#>, <http://irail.be/stations/bluebike/Station%20Bouwel#>,
-    <http://irail.be/stations/bluebike/Station%20Brugge#2021-12-27T06:46:12>, <http://irail.be/stations/bluebike/Station%20Brugge%20%28Kamgebouw%29#2021-12-27T06:46:44>,
+    <http://irail.be/stations/bluebike/Station%20Brugge#2021-12-27T06:51:13>, <http://irail.be/stations/bluebike/Station%20Brugge%20%28Kamgebouw%29#2021-12-27T06:51:44>,
     <http://irail.be/stations/bluebike/Station%20De%20Panne#>, <http://irail.be/stations/bluebike/Station%20Deinze#2021-12-27T06:50:06>,
     <http://irail.be/stations/bluebike/Station%20Dendermonde#2021-12-27T06:48:22>, <http://irail.be/stations/bluebike/Station%20Diegem#>,
-    <http://irail.be/stations/bluebike/Station%20Diest#2021-12-27T06:47:17>, <http://irail.be/stations/bluebike/Station%20Drongen#2021-12-27T06:46:24>,
+    <http://irail.be/stations/bluebike/Station%20Diest#2021-12-27T06:52:18>, <http://irail.be/stations/bluebike/Station%20Drongen#2021-12-27T06:51:25>,
     <http://irail.be/stations/bluebike/Station%20Eeklo#2021-12-27T06:49:18>, <http://irail.be/stations/bluebike/Station%20Ekeren%20Perron%201#>,
     <http://irail.be/stations/bluebike/Station%20Ekeren%20Perron%202#>, <http://irail.be/stations/bluebike/Station%20Essen#>,
     <http://irail.be/stations/bluebike/Station%20Gavere-Asper#2021-12-27T06:50:28>, <http://irail.be/stations/bluebike/Station%20Geel#2021-12-27T06:48:26>,
-    <http://irail.be/stations/bluebike/Station%20Genk#2021-12-27T06:48:40>, <http://irail.be/stations/bluebike/Station%20Gent-Dampoort#2021-12-27T06:47:18>,
+    <http://irail.be/stations/bluebike/Station%20Genk#2021-12-27T06:48:40>, <http://irail.be/stations/bluebike/Station%20Gent-Dampoort#2021-12-27T06:52:18>,
     <http://irail.be/stations/bluebike/Station%20Gent-St.%20P.%20%28M.%20Hendrikaplein%29#2021-12-27T06:48:46>,
-    <http://irail.be/stations/bluebike/Station%20Gent-St.%20P.%20%28St.-Denijslaan%29#2021-12-27T06:46:59>,
+    <http://irail.be/stations/bluebike/Station%20Gent-St.%20P.%20%28St.-Denijslaan%29#2021-12-27T06:52:00>,
     <http://irail.be/stations/bluebike/Station%20Geraardsbergen#2021-12-27T06:50:30>,
-    <http://irail.be/stations/bluebike/Station%20Haacht#>, <http://irail.be/stations/bluebike/Station%20Halle#2021-12-27T06:47:17>,
-    <http://irail.be/stations/bluebike/Station%20Harelbeke#2021-12-27T06:46:42>, <http://irail.be/stations/bluebike/Station%20Hasselt#2021-12-27T06:50:00>,
+    <http://irail.be/stations/bluebike/Station%20Haacht#>, <http://irail.be/stations/bluebike/Station%20Halle#2021-12-27T06:52:17>,
+    <http://irail.be/stations/bluebike/Station%20Harelbeke#2021-12-27T06:51:43>, <http://irail.be/stations/bluebike/Station%20Hasselt#2021-12-27T06:50:00>,
     <http://irail.be/stations/bluebike/Station%20Heide#2021-12-27T06:50:24>, <http://irail.be/stations/bluebike/Station%20Heist#>,
-    <http://irail.be/stations/bluebike/Station%20Heist-op-den-Berg#2021-12-27T06:46:18>,
+    <http://irail.be/stations/bluebike/Station%20Heist-op-den-Berg#2021-12-27T06:51:18>,
     <http://irail.be/stations/bluebike/Station%20Herentals#2021-12-27T06:49:47>, <http://irail.be/stations/bluebike/Station%20Heusden#>,
-    <http://irail.be/stations/bluebike/Station%20Heverlee#2021-12-27T06:47:18>, <http://irail.be/stations/bluebike/Station%20Hove#>,
+    <http://irail.be/stations/bluebike/Station%20Heverlee#2021-12-27T06:52:18>, <http://irail.be/stations/bluebike/Station%20Hove#>,
     <http://irail.be/stations/bluebike/Station%20Ieper#2021-12-27T06:50:17>, <http://irail.be/stations/bluebike/Station%20Izegem#2021-12-27T06:50:09>,
-    <http://irail.be/stations/bluebike/Station%20Knokke#>, <http://irail.be/stations/bluebike/Station%20Kontich-Lint#2021-12-27T06:47:19>,
-    <http://irail.be/stations/bluebike/Station%20Kortrijk#2021-12-27T06:47:05>, <http://irail.be/stations/bluebike/Station%20Landegem#>,
-    <http://irail.be/stations/bluebike/Station%20Landen#>, <http://irail.be/stations/bluebike/Station%20Leuven%20%28Kop%20van%20Kessel-Lo%29#2021-12-27T06:46:19>,
+    <http://irail.be/stations/bluebike/Station%20Knokke#>, <http://irail.be/stations/bluebike/Station%20Kontich-Lint#2021-12-27T06:52:19>,
+    <http://irail.be/stations/bluebike/Station%20Kortrijk#2021-12-27T06:53:03>, <http://irail.be/stations/bluebike/Station%20Landegem#>,
+    <http://irail.be/stations/bluebike/Station%20Landen#>, <http://irail.be/stations/bluebike/Station%20Leuven%20%28Kop%20van%20Kessel-Lo%29#2021-12-27T06:51:19>,
     <http://irail.be/stations/bluebike/Station%20Leuven%20%28Tiensevest%29#2021-12-27T06:50:20>,
-    <http://irail.be/stations/bluebike/Station%20Lier#2021-12-27T06:46:06>, <http://irail.be/stations/bluebike/Station%20Lokeren#2021-12-27T06:50:19>,
-    <http://irail.be/stations/bluebike/Station%20Lommel#>, <http://irail.be/stations/bluebike/Station%20Mechelen#2021-12-27T06:47:21>,
-    <http://irail.be/stations/bluebike/Station%20Mechelen-Nekkerspoel%20#2021-12-27T06:47:17>,
+    <http://irail.be/stations/bluebike/Station%20Lier#2021-12-27T06:51:06>, <http://irail.be/stations/bluebike/Station%20Lokeren#2021-12-27T06:50:19>,
+    <http://irail.be/stations/bluebike/Station%20Lommel#>, <http://irail.be/stations/bluebike/Station%20Mechelen#2021-12-27T06:52:22>,
+    <http://irail.be/stations/bluebike/Station%20Mechelen-Nekkerspoel%20#2021-12-27T06:52:18>,
     <http://irail.be/stations/bluebike/Station%20Merelbeke#2021-12-27T06:50:19>, <http://irail.be/stations/bluebike/Station%20Mol#2021-12-27T06:49:26>,
     <http://irail.be/stations/bluebike/Station%20Mortsel%20Oude%20God#2021-12-27T06:48:16>,
     <http://irail.be/stations/bluebike/Station%20Ninove#2021-12-27T06:50:30>, <http://irail.be/stations/bluebike/Station%20Noorderkempen#2021-12-27T06:49:31>,
-    <http://irail.be/stations/bluebike/Station%20Oostende#2021-12-27T06:46:06>, <http://irail.be/stations/bluebike/Station%20Oudenaarde#2021-12-27T06:48:16>,
-    <http://irail.be/stations/bluebike/Station%20Oudenaarde%20e-lock#>, <http://irail.be/stations/bluebike/Station%20Poperinge#2021-12-27T06:47:21>,
+    <http://irail.be/stations/bluebike/Station%20Oostende#2021-12-27T06:51:06>, <http://irail.be/stations/bluebike/Station%20Oudenaarde#2021-12-27T06:48:16>,
+    <http://irail.be/stations/bluebike/Station%20Oudenaarde%20e-lock#>, <http://irail.be/stations/bluebike/Station%20Poperinge#2021-12-27T06:52:21>,
     <http://irail.be/stations/bluebike/Station%20Roeselare#2021-12-27T06:48:20>, <http://irail.be/stations/bluebike/Station%20Sint-Genesius-Rode#>,
-    <http://irail.be/stations/bluebike/Station%20Sint-Niklaas#2021-12-27T06:49:19>, <http://irail.be/stations/bluebike/Station%20Sint-Truiden#2021-12-27T06:47:24>,
+    <http://irail.be/stations/bluebike/Station%20Sint-Niklaas#2021-12-27T06:49:19>, <http://irail.be/stations/bluebike/Station%20Sint-Truiden#2021-12-27T06:52:24>,
     <http://irail.be/stations/bluebike/Station%20Temse#>, <http://irail.be/stations/bluebike/Station%20Tielt#2021-12-27T06:48:19>,
     <http://irail.be/stations/bluebike/Station%20Tienen#2021-12-27T06:49:27>, <http://irail.be/stations/bluebike/Station%20Tongeren#2021-12-27T06:50:51>,
-    <http://irail.be/stations/bluebike/Station%20Torhout#2021-12-27T06:46:38>, <http://irail.be/stations/bluebike/Station%20Turnhout#2021-12-27T06:50:17>,
-    <http://irail.be/stations/bluebike/Station%20Vilvoorde#2021-12-27T06:47:05>, <http://irail.be/stations/bluebike/Station%20Waregem#2021-12-27T06:47:20>,
+    <http://irail.be/stations/bluebike/Station%20Torhout#2021-12-27T06:51:38>, <http://irail.be/stations/bluebike/Station%20Turnhout#2021-12-27T06:50:17>,
+    <http://irail.be/stations/bluebike/Station%20Vilvoorde#2021-12-27T06:52:06>, <http://irail.be/stations/bluebike/Station%20Waregem#2021-12-27T06:52:21>,
     <http://irail.be/stations/bluebike/Station%20Wevelgem#>, <http://irail.be/stations/bluebike/Station%20Wezemaal#>,
     <http://irail.be/stations/bluebike/Station%20Wondelgem#2021-12-27T06:48:16>, <http://irail.be/stations/bluebike/Station%20Zaventem#2021-12-27T06:49:19>,
     <http://irail.be/stations/bluebike/Station%20Zeebrugge-Dorp#>, <http://irail.be/stations/bluebike/Station%20Zeebrugge-Strand#>,
