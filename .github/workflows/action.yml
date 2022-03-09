@@ -26,6 +26,7 @@ jobs:
       - run: mkdir public
       - run: wget https://github.com/RMLio/rmlmapper-java/releases/download/v4.13.0/rmlmapper-4.13.0-r359-all.jar
       - run: java -jar rmlmapper-4.13.0-r359-all.jar -m mapping-webapi-official.rml.ttl -psd private-security-data.rml.ttl
+      - run: cp ./public/bluebike.ttl ./public/`date "+%Y%d%mT%H%M%S"`.ttl
 
       # Execute deployment only on production
       - name: Deploy
