@@ -27,8 +27,8 @@ jobs:
       - run: wget https://github.com/RMLio/rmlmapper-java/releases/download/v4.13.0/rmlmapper-4.13.0-r359-all.jar
       - run: java -jar rmlmapper-4.13.0-r359-all.jar -m mapping-webapi-official.rml.ttl -psd private-security-data.rml.ttl
       # History
-      - run: export DATE=$(date "+%Y%d%mT%H%M%S")
-      - run: cp ./public/bluebike.ttl ./public/$DATE.ttl
+      - run: echo "DATE=$(date '+%Y%d%mT%H%M%S')" >> $GITHUB_ENV
+      - run: cp ./public/bluebike.ttl "./public/${{ env.DATE }}.ttl"
       - run: cp -R ./public ./history
       - run: |
           # setup the username and email.
@@ -37,7 +37,7 @@ jobs:
       - run: |
           # commit
           git add history
-          git commit -m "history: update $DATE"
+          git commit -m "history: update ${{ env.DATE }}"
           git push origin master
 
       # Execute deployment only on production
