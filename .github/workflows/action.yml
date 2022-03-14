@@ -24,12 +24,19 @@ jobs:
 
       # Generate RDF using RMLMapper
       - run: mkdir public
-      - run: wget https://github.com/RMLio/rmlmapper-java/releases/download/v4.13.0/rmlmapper-4.13.0-r359-all.jar
-      - run: java -jar rmlmapper-4.13.0-r359-all.jar -m mapping-webapi-official.rml.ttl -psd private-security-data.rml.ttl
+      - run: wget https://github.com/RMLio/rmlmapper-java/releases/download/v5.0.0/rmlmapper-5.0.0-r362-all.jar
+      - run: java -jar rmlmapper-5.0.0-r362-all.jar -m mapping-webapi-official.rml.ttl -psd private-security-data.rml.ttl
       # History
       - run: echo "DATE=$(date '+%Y%d%mT%H%M%S')" >> $GITHUB_ENV
       - run: cp ./public/bluebike.ttl "./public/${{ env.DATE }}.ttl"
       - run: cp ./public/*.ttl ./history
+      # generate file list.
+      - run: |
+          echo "file" > list.csv
+          find history -type f -fprintf /dev/stdout "%p\n" >> list.csv
+      # generate root.ttl
+      - run: |
+          java -jar rmlmapper-5.0.0-r362-all.jar -m root.rml.ttl
       - run: |
           # setup the username and email.
           git config user.name "Pieter's GitHub Actions Bot"
